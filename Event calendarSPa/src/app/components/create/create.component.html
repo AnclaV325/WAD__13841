@@ -1,0 +1,41 @@
+<div class="p-8 mt-8 flex justify-center">
+    <form class="shadow border w-4/12 p-4">
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Title </mat-label>
+                <input matInput name="title" type="text" [(ngModel)]="createEvent.name">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Description </mat-label>
+                <input matInput name="description" type="text" [(ngModel)]="createEvent.description">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+               
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="createEvent.date" [ngModelOptions]="{standalone: true}">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Choose Type</mat-label>
+                <mat-select [(ngModel)]="tID" name="Type">
+                    @for(t of cate; track t)
+                    {
+                    <mat-option [value]="t.id">{{t.name}}</mat-option>
+                    }
+                </mat-select>
+
+            </mat-form-field>
+        </div>
+        <div class="flex justify-center">
+            <button mat-raised-button color="primary" (click)="create()" >Create</button>
+        </div>
+    </form>
+</div>
+

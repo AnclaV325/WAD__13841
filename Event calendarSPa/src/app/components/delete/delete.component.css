@@ -1,0 +1,8 @@
+.button-delete {
+    color: azure;
+    background-color: crimson;
+  }
+  .button-delete :hover {
+    color: azure;
+    background-color: grey;
+  }

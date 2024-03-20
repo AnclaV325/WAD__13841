@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 2 1 auto;
+  }
+
+  .flex-1 {
+    color: Salmon;
+  }
+  .button {
+    color:aliceblue;
+    background-color: salmon;
+  }
+  .button:hover{
+    color:aliceblue;
+    background-color:gold;
+  }

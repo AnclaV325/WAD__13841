@@ -1,0 +1,40 @@
+.button-edit{
+  color:aliceblue;
+  background-color: aqua;
+}
+
+.button-edit:hover{
+  
+  color: aliceblue;
+  background-color: gold;
+}
+
+.button-details{
+  color:black;
+  background-color: azure;
+}
+
+.button-details:hover {
+  color:azure;
+  background-color: black;
+}
+
+.button-delete {
+  color: azure;
+  background-color: crimson;
+}
+.button-delete :hover {
+  color: azure;
+  background-color: grey;
+}
+.main{ 
+  max-width: 100%; 
+  height: 150vh; 
+  background: url(../../../../Materials/MeGaJPEG!!!!!\ wow!.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ }
+ table{
+  margin-top: 5%;
+ }

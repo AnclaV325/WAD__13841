@@ -1,0 +1,43 @@
+<div class="p-8 mt-8 flex justify-center">
+    <form class="shadow border w-4/12 p-4">
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Title </mat-label>
+                <input matInput name="title" type="text" [(ngModel)]="editEvent.name">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Description </mat-label>
+                <input matInput name="description" type="text" [(ngModel)]="editEvent.description">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Choose Category</mat-label>
+                <mat-select [(ngModel)]="tID" [(value)]="selected" name="Type">
+                    @for(t of typeObject; track t)
+                    {
+                    <mat-option [value]="t.id">{{t.name}}</mat-option>
+                    }
+                </mat-select>
+
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+               
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="editEvent.Date" [ngModelOptions]="{standalone: true}">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div class="flex justify-around">
+            <button mat-raised-button  (click)="toHome()">Cancel</button>
+            <button mat-raised-button class="button-edit" (click)="edit()">Edit</button>
+        </div>
+    </form>
+</div>
+
+

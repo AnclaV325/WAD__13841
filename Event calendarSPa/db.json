@@ -1,0 +1,27 @@
+{
+    "Events":[
+        {
+          "id": 1,
+          "name": "Party in office",
+          "description": "Lets celebrate a finishing of a big project!",
+          "typeId": 3,
+          "Type": {
+            "id": 3,
+            "name": "Party"
+          },
+          "Date": "2024-03-04"
+        },
+        {
+          "id": 2,
+          "name": " international women's day",
+          "description": "let's celebrate an international women's day",
+          "typeId": 3,
+          "Type": {
+            "id": 3,
+            "name": "Party"
+          },
+          "Date": "2024-03-08"
+        }
+      ]
+      
+}
